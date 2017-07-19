@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "8.4"
   s.osx.deployment_target = "10.10"
-  s.source       = { :git => "git@github.com:KibanLabsInc/hubby.git", :tag => "aferosofthub-podspec-#{s.version}" }
+  s.source       = { :git => "git@github.com:aferodeveloper/hubby.git", :tag => "aferosofthub-podspec-#{s.version}" }
 
   s.source_files = "pkg/src/utils.cpp",
                   "pkg/src/PeripheralManager.cpp",
@@ -41,8 +41,8 @@ Pod::Spec.new do |s|
   s.exclude_files = "**/main.cpp"
   s.public_header_files = "pkg/src/cocoa/AferoSofthub.h"
 
-  MY_LIB_ROOT = "${SOURCE_ROOT}/#{s.name}/thirdparty-ios"
-  MY_HEADER_ROOT = "${SOURCE_ROOT}/#{s.name}/thirdparty-ios"
+  MY_LIB_ROOT = "${PODS_TARGET_SRCROOT}/thirdparty-ios"
+  MY_HEADER_ROOT = "${PODS_TARGET_SRCROOT}/thirdparty-ios"
 
   header_search_paths = '$(inherited) ' + [
     'json-c-0.12/ios/include',
