@@ -18,7 +18,7 @@ Logging support used by Afero libs.
 
   s.homepage         = 'https://github.com/KibanLabsInc/AferoSwiftLogging'
   s.author           = { 'Justin Middleton' => 'jrmiddle@afero.io' }
-  s.source           = { :git => 'git@github.com:KibanLabsInc/AferoSwiftLogging.git', :tag => s.version.to_s }
+  s.source           = { :git => 'git@github.com:aferodeveloper/AferoSwiftLogging.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/aferodev'
   s.ios.deployment_target = '8.0'
   s.source_files = 'AferoSwiftLogging/Classes/**/*'
