@@ -9,11 +9,12 @@ Pod::Spec.new do |s|
   s.license      = "Proprietary"
   s.author             = { "Afero, Inc." => "developer@afero.io" }
 
-  s.ios.deployment_target = "8.4"
-  s.osx.deployment_target = "10.10"
-  s.source       = { :git => "git@github.com:aferodeveloper/AferoSofthub.git", :tag => "#{s.version}" }
+  s.ios.deployment_target = "9.3"
+  s.source       = {
+    :http => "https://github.com/aferodeveloper/AferoSofthub/raw/#{s.version}/AferoSofthub.zip"
+  }
 
   s.weak_frameworks = 'CoreBluetooth', 'SystemConfiguration'
-  s.vendored_frameworks = "AferoSofthub.framework"
+  s.vendored_frameworks = "AferoSofthub.framework" 
 
 end
