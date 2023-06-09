@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "9.3"
   s.source       = {
-    :git => "git@github.com:aferodeveloper/AferoIOSSofthub.git", :tag => s.version
+    :git => "https://github.com/aferodeveloper/AferoIOSSofthub.git", :tag => s.version
   }
 
   s.prepare_command = '/usr/bin/unzip AferoSofthub.zip' 
